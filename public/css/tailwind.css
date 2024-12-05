@@ -1,0 +1,105 @@
+
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Base Typography */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Containers */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.section-padding {
+  @apply py-12 lg:py-20;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-purple-600 text-white font-semibold rounded-lg px-6 py-3 shadow-md transition duration-300 flex items-center gap-2;
+}
+.btn-primary:hover {
+  @apply bg-purple-700;
+}
+
+.btn-secondary {
+  @apply bg-white border border-purple-600 text-purple-600 font-semibold rounded-lg px-6 py-3 shadow-md transition duration-300 flex items-center gap-2;
+}
+.btn-secondary:hover {
+  @apply bg-purple-100;
+}
+
+/* Icons */
+.icon-purple {
+  @apply text-purple-600 text-lg;
+}
+.icon-purple:hover {
+  @apply text-purple-700;
+}
+
+/* Utility Classes for Purple */
+.heading-purple {
+  @apply text-purple-700 font-bold;
+}
+.border-purple {
+  @apply border border-purple-600;
+}
+.bg-purple {
+  @apply bg-purple-600 text-white;
+}
+
+/* Typography */
+.title {
+  @apply text-4xl lg:text-5xl font-extrabold leading-snug;
+}
+.subtitle {
+  @apply text-lg lg:text-xl text-gray-600 mt-2;
+}
+
+/* Counter Styles */
+.counter-box {
+  @apply flex flex-col items-center justify-center p-6 rounded-lg shadow-md border border-purple-600;
+}
+.counter-value {
+  @apply text-3xl font-bold text-purple-600;
+}
+.counter-label {
+  @apply mt-2 text-gray-600 text-base font-medium;
+}
+
+/* Spacing */
+.spacing-lg {
+  @apply mt-12 lg:mt-16;
+}
+.spacing-md {
+  @apply mt-8 lg:mt-12;
+}
+.spacing-sm {
+  @apply mt-4 lg:mt-6;
+}
+
+/* Responsive Images */
+.img-full {
+  @apply w-full h-full object-cover;
+}
+
+/* Additional Styles */
+.shadow-box {
+  @apply shadow-lg rounded-lg;
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
